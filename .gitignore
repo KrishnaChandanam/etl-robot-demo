@@ -1,4 +1,11 @@
-# Python
+# macOS
+.DS_Store
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Python artifacts
 __pycache__/
 *.py[cod]
 *.so
@@ -9,17 +16,25 @@ __pycache__/
 .venv/
 venv/
 
-# macOS
-.DS_Store
-
-# Editors/IDE
-.vscode/
-.idea/
+# Environment files
+.env
+.env.*
 
 # Robot Framework outputs
+results/
 output.xml
 log.html
 report.html
 
 # Bytecode and temp
 *.tmp
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+terraform.tfvars
