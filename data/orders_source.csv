@@ -1,0 +1,4 @@
+order_id,customer_id,quantity,unit_price,order_date
+101,CUST01,2,100,2024/12/01
+102,CUST02,1,200,2024/12/02
+103,,3,150,2024/12/03
