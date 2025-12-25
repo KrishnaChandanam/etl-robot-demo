@@ -1,0 +1,16 @@
+# Non-secret defaults (copy to terraform.tfvars and edit as needed)
+prefix       = "etljenkins"
+location     = "eastus"
+vm_size      = "Standard_B2s"
+admin_username = "jenkins"
+jenkins_port = 8080
+
+# Provide your SSH public key via CLI or put the literal key here (not recommended to commit):
+# ssh_public_key = "ssh-rsa AAAA... user@host"
+
+# Optional Azure auth via tfvars (used when passing a Secret File in Jenkins).
+# For local dev, prefer Azure CLI or environment variables instead of putting secrets here.
+# subscription_id = "df5f195c-..."
+# tenant_id       = "1f23d6d3-..."
+# client_id       = "<appId>"
+# client_secret   = "<password>"

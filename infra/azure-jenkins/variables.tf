@@ -32,3 +32,29 @@ variable "jenkins_port" {
   type        = number
   default     = 8080
 }
+
+# Optional Azure auth inputs when using a Secret File tfvars in Jenkins
+variable "subscription_id" {
+  description = "Azure subscription ID"
+  type        = string
+  default     = null
+}
+
+variable "tenant_id" {
+  description = "Azure tenant ID"
+  type        = string
+  default     = null
+}
+
+variable "client_id" {
+  description = "Azure Service Principal app (client) ID"
+  type        = string
+  default     = null
+}
+
+variable "client_secret" {
+  description = "Azure Service Principal client secret"
+  type        = string
+  sensitive   = true
+  default     = null
+}
